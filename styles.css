@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+}
+/* header styles */
+header{
+    background-color: rgb(16, 21, 34);
+    width:100%;
+    height: 80px;
+    padding: 20px 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    gap: 10px;
+}
+header .logo a , footer .logo a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+header nav{
+    width: 40%;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+}
+header nav ul li a:hover{
+    border-bottom: 3px solid white;
+}
+header nav .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* main  */
+/* hero styles */
+main , .hero{
+    width: 100%;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 21, 34);
+    padding: 150px 3rem;
+}
+.hero .hero-content{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.hero .hero-content h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 20px;
+
+}
+.hero .hero-content span{
+    color: rgb(169, 179, 193);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+}
+.hero .hero-content p{
+    color: rgb(169, 179, 193);
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+.hero .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 12px 65px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero .hero-img img{
+    width:500px;
+}
+/* testimonial */
+.testimonial{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 3rem;
+}
+.testimonial .testimonial-img{
+     width: 50%;
+}
+.testimonial img{
+    width: 500px; 
+}
+.testimonial .testimonial-content{
+    width: 50%;
+}
+.testimonial .testimonial-content h1{
+    color: black;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+.testimonial .testimonial-content span{
+    color:rgb(75, 89, 247);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+}
+.testimonial .testimonial-content p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+.testimonial .testimonial-content .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 12px 65px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* setup styles */
+.setup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 21, 34);
+    padding: 150px 3rem;
+}
+.setup img{
+    width: 550px;
+}
+.setup h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.setup span{
+    color: rgb(169, 179, 193);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+}
+.setup p{
+     color: rgb(169, 179, 193);
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+.setup .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 12px 65px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* service */
+.service{
+    width: 100%;
+    background-color: rgb(75, 89, 247);
+    padding: 150px 3rem;
+    text-align: center;
+}
+.service h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.service .flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    margin: auto;
+}
+.service .flex .services{
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    padding: 4rem 0;
+    text-decoration: none;
+    width: 33%;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service .flex a:hover{
+    transform: scale(1.06);
+    transition: 0.3s ease-out;
+    color: rgb(28, 34, 55);
+}
+.service .flex .services h2{
+    color: white;
+    margin-top: 20px;
+}
+.service .flex .services h3{
+    color: white;
+    font-size: 2.5rem;
+}
+.service .flex .services p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.service .flex .services span{
+    display: block;
+    color: rgb(169, 179, 193);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.service .flex .services button{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+/* signup styles */
+.sign-up{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(16, 21, 34);
+    padding: 150px 2rem;
+}
+.sign-up img{
+    width: 550px;
+}
+
+.sign-up span{
+    color: rgb(169, 179, 193);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+}
+.sign-up h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.sign-up p{
+     color: rgb(169, 179, 193);
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+.sign-up .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 12px 65px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* footer styles */
+footer{
+    width: 100%;
+    background-color: rgb(16, 21, 34);
+    text-align: center;
+}
+footer .footer-content h3{
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+footer .footer-content p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+footer .footer-content input, footer input:active{
+    width: 230px;
+    height: 40px;
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+footer .footer-content .btn{
+    background: rgb(75, 89, 247);
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+footer .footer-flex{
+    width: 55%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+    margin-top: 50px;
+}
+footer .footer-flex .flex-item{
+    width: 20%;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+footer .footer-flex .flex-item h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+footer .footer-flex .flex-item p{
+     margin-bottom: 10px;
+     cursor: pointer;
+}
+footer .footer-flex .flex-item p:hover{
+    color: rgb(75, 89, 247);
+}
+footer .footer-info{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:40px ;
+}
+footer .footer-info .copy{
+    color: white;
+    font-size: 12px;
+}
+footer .footer-info .social-media a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+footer .footer-info .social-media a:hover {
+    color: rgb(75, 89, 247);
+}
+
+/* additional styles */
+a,button{
+    cursor: pointer;
+}
+
