@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sing up</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <header>
+<!-- header section -->
+     <header>
+        <div class="hamburger">
+            <i class="fa fa-bars" data-visible="true"></i>
+            <i class="fa fa-close" data-visible="false"></i>
+        </div>
         <div class="logo">
             <a href="">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="logo-img" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255);"><path d="M445.7 127.9V384l-63.4 36.5V164.7L223.8 73.1 65.2 164.7l.4 255.9L2.3 384V128.1L224.2 0l221.5 127.9zM255.6 420.5L224 438.9l-31.8-18.2v-256l-63.3 36.6.1 255.9 94.9 54.9 95.1-54.9v-256l-63.4-36.6v255.9z"></path></svg>
@@ -15,11 +22,11 @@
             </a>
         </div>
         <nav>
-            <ul class="nav-list">
+            <ul class="nav-list" data-visible="false">
                 <li class="nav-links"><a href="index.html">Home</a></li>
                 <li class="nav-links"><a href="service.html">Services</a></li>
-                <li class="nav-links"><a href="product.html">Products</a></li>
-                <a href="signup.html" class="btn">SING UP</a>
+                <li class=""><a href="product.html">Products</a></li>
+               <li><a href="signup.html" class="btn">SING UP</a></li> 
             </ul>
         </nav>
      </header>
@@ -39,6 +46,7 @@
         </section>
         </main>
         <!-- footer -->
+      <!-- footer -->
       <footer>
         <div class="footer-content">
             <h3>Join our exclusive membership to receive the latest news and trends</h3>
@@ -47,6 +55,7 @@
             <button type="submit" class="btn">Subscribe</button>
         </div>
         <div class="footer-flex">
+            <div class="flex-a">
             <div class="flex-item one ">
                 <h1>About Us</h1>
                 <p>How it works</p>
@@ -55,6 +64,8 @@
                 <p>Investors</p>
                 <p>Terms of Service</p>
             </div>
+            
+            
             <div class="flex-item two">
                 <h1>Contact Us</h1>
                 <p>Contact</p>
@@ -62,6 +73,8 @@
                 <p>Destinations</p>
                 <p>Sponsorships</p>
             </div>
+            </div>
+            <div class="flex-b">
             <div class="flex-item three">
                 <h1>Videos</h1>
                 <p>Submit Video</p>
@@ -75,6 +88,7 @@
                 <p>twitter</p>
                 <p>instagram</p>
                 <p>youtube</p>
+            </div>
             </div>
         </div>
         <div class="footer-info">
@@ -98,5 +112,7 @@
             </div>
         </div>
       </footer>
+
+      <script src="main.js"></script>
 </body>
 </html>
