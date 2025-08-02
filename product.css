@@ -38,7 +38,8 @@ header nav{
 }
 header nav ul{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-left: 50px;
     gap: 30px;
     align-items: center;
 }
@@ -270,29 +271,33 @@ a,button{
     header{
         flex-direction: column;
         align-items: self-start;
-        padding:50px 20px;
+        padding:50px 0;
     }
     .logo{
-        /* height: 100%; */
+       margin-left: 20px;
     }
     nav{
         min-width: 100%;
     }
     nav ul{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         flex-direction: column;
-        margin-top: 0.8rem;
         padding: 50px;
+        text-align: center;
         background-color: rgb(16, 21, 34);
         transform: translateX(0%);
-        transition: transform 0.5s;
+        transition: 0.5s;
     }
     nav ul[data-visible="false"]{
         transform: translateX(-1000%);
     }
     nav ul li{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    nav ul li .btn{
+        padding: 10px 100px;
     }
     .hamburger{
         display: block;
@@ -309,9 +314,9 @@ a,button{
     .hamburger i[data-visible="false"]{
         display: none;
     }
-    .hero ,  .setup {
+    .hero , .setup {
         flex-direction: column;
-        padding: 50px 30px;
+        /* padding: 50px 30px; */
     }
     .hero .hero-content ,.hero img{
         min-width: 100%;
