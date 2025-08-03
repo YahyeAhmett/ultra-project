@@ -121,6 +121,7 @@ footer{
     width: 100%;
     background-color: rgb(16, 21, 34);
     text-align: center;
+    padding-top: 100px;
 }
 footer .footer-content h3{
     color: white;
@@ -273,7 +274,6 @@ a,button{
         max-width: 100%;
     }
     footer {
-        padding-top: 40px;
         padding-bottom: 50px;
     }
     .footer-flex{

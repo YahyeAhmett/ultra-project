@@ -64,6 +64,10 @@ header nav .btn{
     border-radius: 5px;
     text-decoration: none;
 }
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
 /* main  */
 main{
     width: 100%;
@@ -71,10 +75,12 @@ main{
 /* hero styles */
 .hero{
     width: 100%;
+    background-color: rgb(16, 21, 34);
+}
+.hero .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(16, 21, 34);
     padding: 150px 3rem;
 }
 .hero .hero-content{
@@ -83,7 +89,7 @@ main{
 }
 .hero .hero-content h1{
     color: white;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-top: 16px;
     margin-bottom: 20px;
@@ -120,6 +126,8 @@ main{
 .testimonial{
     width: 100%;
     background-color: #fff;
+}
+.testimonial .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +144,7 @@ main{
 }
 .testimonial .testimonial-content h1{
     color: black;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-top: 16px;
     margin-bottom: 20px;
@@ -168,10 +176,12 @@ main{
 /* setup styles */
 .setup{
     width: 100%;
+    background-color: rgb(16, 21, 34);
+}
+.setup .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(16, 21, 34);
     padding: 150px 3rem;
 }
 .setup img{
@@ -278,11 +288,13 @@ main{
 /* signup styles */
 .sign-up{
     width: 100%;
+    background-color: rgb(16, 21, 34);
+}
+.sign-up .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    background-color: rgb(16, 21, 34);
     padding: 150px 2rem;
 }
 .sign-up img{
@@ -471,9 +483,15 @@ a,button{
     .hamburger i[data-visible="false"]{
         display: none;
     }
-    .hero , .testimonial , .setup , .sign-up , .flex{
+    .container{
+        max-width: 100%;
+    }
+    main .container , .service .flex{
         flex-direction: column;
         /* padding: 50px 30px; */
+    }
+    .testimonial .container{
+        flex-direction: column-reverse;
     }
     .hero .hero-content ,.hero img{
         min-width: 100%;
